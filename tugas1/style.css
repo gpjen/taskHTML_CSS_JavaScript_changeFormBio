@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial;
+    overflow: auto;
+}
+
+body {
+    padding: 5px;
+}
+
+header  {
+    background-color: #157474;
+    height: auto;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, header p {
+    padding: 10px;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    background-color:#f19e33 ;
+
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+nav a:hover {
+    columns: f2b7c3;
+    color: #fd4551;
+}
+
+
+.editprofil h3, .profil h3 {
+    text-align: center;
+}
+
+
+main {
+    color: rgb(88, 88, 92);
+    padding-top: 30px;
+    padding-bottom:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+}
+
+main .editprofil {
+    width: 600px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    order: 2;
+    padding: 10px;
+}
+
+main .profil {
+    width: 600px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    order: 1;
+    padding: 10px;
+}
+
+main .profil h3 {
+    padding-top: 20px;
+}
+
+main .profil table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+main .profil img {
+    padding: 10px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+main .editprofil h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+main .editprofil form table tr td input {
+    width: 100%;
+    height: 30px;
+    border:2px solid rgba(0, 0, 0, 0.3) 
+}
+
+main .editprofil form table tr td select {
+    width: 100%;
+    border:2px solid rgba(0, 0, 0, 0.3) 
+}
+
+main .editprofil form table tr td textarea {
+    width: 100%;
+    border:2px solid rgba(0, 0, 0, 0.3) 
+}
+
+main .editprofil form table tr td button {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
