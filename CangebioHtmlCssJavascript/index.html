@@ -26,7 +26,8 @@
 <main>
     <div class="editprofil">
         <h3>Edit Bio</h3>
-        <form action="" method="POST" enctype="multipart/form-data">
+        <div class="bodyCard">
+        <form action="#">
             <table>
                 <tr>
                     <td><label for="nama">Name </label></td>
@@ -69,62 +70,69 @@
                 <tr>
                     <td></td>
                     <td></td>
-                    <td><input type="file" accept=".png, .jpg" title="Chose Photo Profile" ></td>
+                    <td><input id="photoProfile" type="file" accept=".png, .jpg" title="Chose Photo Profile" ></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td>
-                        <button type="submit">SIMPAN</button>
+                        <button  type="submit" onclick="changeBio()">SIMPAN</button>
                     </td>
                 </tr>
             </table>
         </form>
+        </div>
     </div>
     <div class="profil">
         <h3>Biodata</h3>
-        <center>
-        <img height="100" src="https://i.pinimg.com/236x/43/00/49/430049716c854ac0d17a3d29c1252bbb.jpg" alt="Profil">
-    </center>
-        <table>
-            <tr>
-                <td><b>Name</b></td>
-                <td>:</td>
-                <td>Gandi Purna Jen</td>
-            </tr>
-            <tr>
-                <td><b>Phone Number</b></td>
-                <td>:</td>
-                <td>0821 **** 4482</td>
-            </tr>
-            <tr>
-                <td><b>Email</b></td>
-                <td>:</td>
-                <td>nyonggpj9995@gmail.com</td>
-            </tr>
-            <tr>
-                <td><b>Relogin</b></td>
-                <td>:</td>
-                <td>Islam</td>
-            </tr>
-            <tr>
-                <td><b>Address</b></td>
-                <td>:</td>
-                <td>Kota Ambon, Prof.Maluku</td>
-            </tr>
-            <tr>
-                <td><b>Sumarry</b></td>
-                <td>:</td>
-                <td>
-                    <summary>
-                        <p>baik, rajin menabung, hobi makan</p>
-                    </summary>
-                </td>
-            </tr>
-        </table>
+        <div class="headCard">
+            <center>
+                <img height="100" src="https://i.pinimg.com/236x/43/00/49/430049716c854ac0d17a3d29c1252bbb.jpg" alt="Profil">
+            </center>
+        </div>
+        <div class="bodyCard">
+            <table>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>:</td>
+                    <td><span id="showName">Gandi Purna Jen</span></td>
+                </tr>
+                <tr>
+                    <td><b>Phone Number</b></td>
+                    <td>:</td>
+                    <td><span id="showPhoneNumber">0821 0000 4482</span></td>
+                </tr>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td>:</td>
+                    <td><span id="showEmail">nyonggpj9995@gmail.com</span></td>
+                </tr>
+                <tr>
+                    <td><b>Region</b></td>
+                    <td>:</td>
+                    <td><span id="showRegion">Islam</span></td>
+                </tr>
+                <tr>
+                    <td><b>Address</b></td>
+                    <td>:</td>
+                    <td><span id="showAddress">Kota Ambon, Prof.Maluku</span></td>
+                </tr>
+                <tr>
+                    <td><b>Sumarry</b></td>
+                    <td>:</td>
+                    <td>
+                        <summary>
+                            <p><span id="showSummary">baik, rajin menabung, hobi makan</span></p>
+                        </summary>
+                    </td>
+                </tr>
+            </table>
+        </div>
         
     </div>
 
 </main>
+
+<script src="script.js"></script>
 </body>
 </html>
