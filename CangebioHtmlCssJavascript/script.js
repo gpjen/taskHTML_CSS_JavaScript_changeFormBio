@@ -1,5 +1,5 @@
 
-let btnSubmit = document.getElementById("submit");
+const TSubmit = document.getElementById("Tsubmit");
 
 function changeBio() {
     
@@ -24,8 +24,7 @@ function changeBio() {
 }
 
 
-btnSubmit.addEventListener("click", (e) => {
-    e.preventDevault();
+TSubmit.addEventListener("click", function (e) {
+    e.preventDefault();
     changeBio();
 });
-
