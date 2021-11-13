@@ -1,2 +1,2 @@
 # taskHTML
-tugas belajar html membuat form data diri
+tugas belajar html, css, JS membuat form data diri
